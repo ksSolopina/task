@@ -1,0 +1,21 @@
+<div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-md-4">
+        <div ng-repeat="(key, category) in categories" ng-click="showDetails(category)">
+            <a href="#"  ng-click="expand(category)">{{category.title}}</a>
+            <div ng-show="category.show">
+                <div class="checkbox" ng-repeat="(key, subcategory) in category.subcategories">
+                    <label>
+                        <input type="checkbox" ng-model="chkStatus" ng-change="showProducts(subcategory, chkStatus)">{{subcategory.title}}
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <h3>Продукты</h3>
+        <div ng-repeat="(key, product) in products">
+            <span>{{key+1}}.</span>
+            <span> {{product.title}}</span>
+        </div>
+    </div>
+</div>

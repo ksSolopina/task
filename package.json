@@ -1,0 +1,31 @@
+{
+  "name": "Frontend-Test-Task",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Panshin/Frontend-test-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Panshin/Frontend-test-task/issues"
+  },
+  "homepage": "https://github.com/Panshin/Frontend-test-task",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-resource": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "body-parser": "^1.12.3",
+    "bootstrap": "^3.3.6",
+    "express": "^4.12.3",
+    "gulp": "^3.8.11",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}
